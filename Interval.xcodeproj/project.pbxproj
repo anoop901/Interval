@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E1DEF5D1A6492D70053CEAF /* IntervalScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1DEF5C1A6492D70053CEAF /* IntervalScene.swift */; };
+		6E22707F1A634A1D0093BB48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E22707E1A634A1D0093BB48 /* AppDelegate.swift */; };
+		6E2270811A634A1D0093BB48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2270801A634A1D0093BB48 /* ViewController.swift */; };
+		6E2270841A634A1D0093BB48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2270821A634A1D0093BB48 /* Main.storyboard */; };
+		6E2270861A634A1D0093BB48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E2270851A634A1D0093BB48 /* Images.xcassets */; };
+		6E2270891A634A1D0093BB48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E2270871A634A1D0093BB48 /* LaunchScreen.xib */; };
+		6E2270951A634A1E0093BB48 /* IntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2270941A634A1E0093BB48 /* IntervalTests.swift */; };
+		6E2270BF1A6359340093BB48 /* Tone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2270BE1A6359340093BB48 /* Tone.swift */; };
+		6E2270C11A63960C0093BB48 /* Synthesizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E2270C01A63960C0093BB48 /* Synthesizer.mm */; };
+		6E4EF92F1ACAEA440012B496 /* libSTK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4EF92C1ACAEA370012B496 /* libSTK.a */; };
+		6E4EF9301ACAEC050012B496 /* rawwaves.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E4EF92E1ACAEA370012B496 /* rawwaves.bundle */; };
+		6E4EF9431ACAF22A0012B496 /* libTheAmazingAudioEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4EF9401ACAF1DE0012B496 /* libTheAmazingAudioEngine.a */; };
+		6E4EF9451ACAF2440012B496 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4EF9441ACAF2440012B496 /* AudioToolbox.framework */; };
+		6E4EF9471ACAF24C0012B496 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4EF9461ACAF24B0012B496 /* AVFoundation.framework */; };
+		6E4EF9491ACAF2570012B496 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4EF9481ACAF2570012B496 /* Accelerate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E22708F1A634A1D0093BB48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E2270711A634A1D0093BB48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E2270781A634A1D0093BB48;
+			remoteInfo = Interval;
+		};
+		6E4EF92B1ACAEA370012B496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E4EF9261ACAEA370012B496 /* STK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0AC5BEE18CB31DE00D860C0;
+			remoteInfo = STK;
+		};
+		6E4EF92D1ACAEA370012B496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E4EF9261ACAEA370012B496 /* STK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0EC33B718CB73A70005787B;
+			remoteInfo = rawwaves;
+		};
+		6E4EF9311ACAECCF0012B496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E4EF9261ACAEA370012B496 /* STK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B0AC5BED18CB31DE00D860C0;
+			remoteInfo = STK;
+		};
+		6E4EF9331ACAECCF0012B496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E4EF9261ACAEA370012B496 /* STK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B0EC337B18CB73480005787B;
+			remoteInfo = rawwaves;
+		};
+		6E4EF93F1ACAF1DE0012B496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E4EF93B1ACAF1DE0012B496 /* TheAmazingAudioEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C215CEC1523A7D500D36CAD;
+			remoteInfo = TheAmazingAudioEngine;
+		};
+		6E4EF9411ACAF2220012B496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E4EF93B1ACAF1DE0012B496 /* TheAmazingAudioEngine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C215CEB1523A7D500D36CAD;
+			remoteInfo = TheAmazingAudioEngine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E1DEF5C1A6492D70053CEAF /* IntervalScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalScene.swift; sourceTree = "<group>"; };
+		6E2270791A634A1D0093BB48 /* Interval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Interval.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E22707D1A634A1D0093BB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E22707E1A634A1D0093BB48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E2270801A634A1D0093BB48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6E2270831A634A1D0093BB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E2270851A634A1D0093BB48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6E2270881A634A1D0093BB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6E22708E1A634A1D0093BB48 /* IntervalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntervalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E2270931A634A1E0093BB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E2270941A634A1E0093BB48 /* IntervalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTests.swift; sourceTree = "<group>"; };
+		6E2270BD1A634C420093BB48 /* Interval-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Interval-Bridging-Header.h"; sourceTree = "<group>"; };
+		6E2270BE1A6359340093BB48 /* Tone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tone.swift; path = Interval/Tone.swift; sourceTree = "<group>"; };
+		6E2270C01A63960C0093BB48 /* Synthesizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Synthesizer.mm; path = Interval/Synthesizer.mm; sourceTree = "<group>"; };
+		6E2270C21A639A190093BB48 /* Synthesizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Synthesizer.h; path = Interval/Synthesizer.h; sourceTree = "<group>"; };
+		6E4EF9261ACAEA370012B496 /* STK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = STK.xcodeproj; path = stk/iOS/STK.xcodeproj; sourceTree = "<group>"; };
+		6E4EF93B1ACAF1DE0012B496 /* TheAmazingAudioEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TheAmazingAudioEngine.xcodeproj; path = TheAmazingAudioEngine/TheAmazingAudioEngine.xcodeproj; sourceTree = "<group>"; };
+		6E4EF9441ACAF2440012B496 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6E4EF9461ACAF24B0012B496 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6E4EF9481ACAF2570012B496 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E2270761A634A1D0093BB48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4EF9491ACAF2570012B496 /* Accelerate.framework in Frameworks */,
+				6E4EF9471ACAF24C0012B496 /* AVFoundation.framework in Frameworks */,
+				6E4EF9451ACAF2440012B496 /* AudioToolbox.framework in Frameworks */,
+				6E4EF9431ACAF22A0012B496 /* libTheAmazingAudioEngine.a in Frameworks */,
+				6E4EF92F1ACAEA440012B496 /* libSTK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E22708B1A634A1D0093BB48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E2270701A634A1D0093BB48 = {
+			isa = PBXGroup;
+			children = (
+				6E4EF9481ACAF2570012B496 /* Accelerate.framework */,
+				6E4EF9461ACAF24B0012B496 /* AVFoundation.framework */,
+				6E4EF9441ACAF2440012B496 /* AudioToolbox.framework */,
+				6E4EF93B1ACAF1DE0012B496 /* TheAmazingAudioEngine.xcodeproj */,
+				6E4EF9261ACAEA370012B496 /* STK.xcodeproj */,
+				6E2270BD1A634C420093BB48 /* Interval-Bridging-Header.h */,
+				6E22707B1A634A1D0093BB48 /* Interval */,
+				6E2270C31A6449EF0093BB48 /* Synthesizer */,
+				6E2270911A634A1E0093BB48 /* IntervalTests */,
+				6E22707A1A634A1D0093BB48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E22707A1A634A1D0093BB48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E2270791A634A1D0093BB48 /* Interval.app */,
+				6E22708E1A634A1D0093BB48 /* IntervalTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E22707B1A634A1D0093BB48 /* Interval */ = {
+			isa = PBXGroup;
+			children = (
+				6E22707E1A634A1D0093BB48 /* AppDelegate.swift */,
+				6E2270801A634A1D0093BB48 /* ViewController.swift */,
+				6E1DEF5C1A6492D70053CEAF /* IntervalScene.swift */,
+				6E2270821A634A1D0093BB48 /* Main.storyboard */,
+				6E2270851A634A1D0093BB48 /* Images.xcassets */,
+				6E2270871A634A1D0093BB48 /* LaunchScreen.xib */,
+				6E22707C1A634A1D0093BB48 /* Supporting Files */,
+			);
+			path = Interval;
+			sourceTree = "<group>";
+		};
+		6E22707C1A634A1D0093BB48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E22707D1A634A1D0093BB48 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E2270911A634A1E0093BB48 /* IntervalTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E2270941A634A1E0093BB48 /* IntervalTests.swift */,
+				6E2270921A634A1E0093BB48 /* Supporting Files */,
+			);
+			path = IntervalTests;
+			sourceTree = "<group>";
+		};
+		6E2270921A634A1E0093BB48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E2270931A634A1E0093BB48 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E2270C31A6449EF0093BB48 /* Synthesizer */ = {
+			isa = PBXGroup;
+			children = (
+				6E2270BE1A6359340093BB48 /* Tone.swift */,
+				6E2270C21A639A190093BB48 /* Synthesizer.h */,
+				6E2270C01A63960C0093BB48 /* Synthesizer.mm */,
+			);
+			name = Synthesizer;
+			sourceTree = "<group>";
+		};
+		6E4EF9271ACAEA370012B496 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E4EF92C1ACAEA370012B496 /* libSTK.a */,
+				6E4EF92E1ACAEA370012B496 /* rawwaves.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E4EF93C1ACAF1DE0012B496 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E4EF9401ACAF1DE0012B496 /* libTheAmazingAudioEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E2270781A634A1D0093BB48 /* Interval */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E2270981A634A1E0093BB48 /* Build configuration list for PBXNativeTarget "Interval" */;
+			buildPhases = (
+				6E2270751A634A1D0093BB48 /* Sources */,
+				6E2270761A634A1D0093BB48 /* Frameworks */,
+				6E2270771A634A1D0093BB48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E4EF9421ACAF2220012B496 /* PBXTargetDependency */,
+				6E4EF9321ACAECCF0012B496 /* PBXTargetDependency */,
+				6E4EF9341ACAECCF0012B496 /* PBXTargetDependency */,
+			);
+			name = Interval;
+			productName = Interval;
+			productReference = 6E2270791A634A1D0093BB48 /* Interval.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E22708D1A634A1D0093BB48 /* IntervalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E22709B1A634A1E0093BB48 /* Build configuration list for PBXNativeTarget "IntervalTests" */;
+			buildPhases = (
+				6E22708A1A634A1D0093BB48 /* Sources */,
+				6E22708B1A634A1D0093BB48 /* Frameworks */,
+				6E22708C1A634A1D0093BB48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E2270901A634A1D0093BB48 /* PBXTargetDependency */,
+			);
+			name = IntervalTests;
+			productName = IntervalTests;
+			productReference = 6E22708E1A634A1D0093BB48 /* IntervalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E2270711A634A1D0093BB48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Anoop Naravaram";
+				TargetAttributes = {
+					6E2270781A634A1D0093BB48 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 864PWXANPP;
+					};
+					6E22708D1A634A1D0093BB48 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 6E2270781A634A1D0093BB48;
+					};
+				};
+			};
+			buildConfigurationList = 6E2270741A634A1D0093BB48 /* Build configuration list for PBXProject "Interval" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E2270701A634A1D0093BB48;
+			productRefGroup = 6E22707A1A634A1D0093BB48 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6E4EF9271ACAEA370012B496 /* Products */;
+					ProjectRef = 6E4EF9261ACAEA370012B496 /* STK.xcodeproj */;
+				},
+				{
+					ProductGroup = 6E4EF93C1ACAF1DE0012B496 /* Products */;
+					ProjectRef = 6E4EF93B1ACAF1DE0012B496 /* TheAmazingAudioEngine.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				6E2270781A634A1D0093BB48 /* Interval */,
+				6E22708D1A634A1D0093BB48 /* IntervalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6E4EF92C1ACAEA370012B496 /* libSTK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSTK.a;
+			remoteRef = 6E4EF92B1ACAEA370012B496 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6E4EF92E1ACAEA370012B496 /* rawwaves.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = rawwaves.bundle;
+			remoteRef = 6E4EF92D1ACAEA370012B496 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6E4EF9401ACAF1DE0012B496 /* libTheAmazingAudioEngine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTheAmazingAudioEngine.a;
+			remoteRef = 6E4EF93F1ACAF1DE0012B496 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E2270771A634A1D0093BB48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E2270841A634A1D0093BB48 /* Main.storyboard in Resources */,
+				6E2270891A634A1D0093BB48 /* LaunchScreen.xib in Resources */,
+				6E2270861A634A1D0093BB48 /* Images.xcassets in Resources */,
+				6E4EF9301ACAEC050012B496 /* rawwaves.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E22708C1A634A1D0093BB48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E2270751A634A1D0093BB48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E2270C11A63960C0093BB48 /* Synthesizer.mm in Sources */,
+				6E2270BF1A6359340093BB48 /* Tone.swift in Sources */,
+				6E2270811A634A1D0093BB48 /* ViewController.swift in Sources */,
+				6E22707F1A634A1D0093BB48 /* AppDelegate.swift in Sources */,
+				6E1DEF5D1A6492D70053CEAF /* IntervalScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E22708A1A634A1D0093BB48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E2270951A634A1E0093BB48 /* IntervalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E2270901A634A1D0093BB48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E2270781A634A1D0093BB48 /* Interval */;
+			targetProxy = 6E22708F1A634A1D0093BB48 /* PBXContainerItemProxy */;
+		};
+		6E4EF9321ACAECCF0012B496 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = STK;
+			targetProxy = 6E4EF9311ACAECCF0012B496 /* PBXContainerItemProxy */;
+		};
+		6E4EF9341ACAECCF0012B496 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = rawwaves;
+			targetProxy = 6E4EF9331ACAECCF0012B496 /* PBXContainerItemProxy */;
+		};
+		6E4EF9421ACAF2220012B496 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TheAmazingAudioEngine;
+			targetProxy = 6E4EF9411ACAF2220012B496 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E2270821A634A1D0093BB48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E2270831A634A1D0093BB48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E2270871A634A1D0093BB48 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E2270881A634A1D0093BB48 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E2270961A634A1E0093BB48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"~/stk/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E2270971A634A1E0093BB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"~/stk/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E2270991A634A1E0093BB48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					TheAmazingAudioEngine/TheAmazingAudioEngine,
+					stk/include,
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = Interval/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Interval-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		6E22709A1A634A1E0093BB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					TheAmazingAudioEngine/TheAmazingAudioEngine,
+					stk/include,
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = Interval/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Interval-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		6E22709C1A634A1E0093BB48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IntervalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Interval.app/Interval";
+			};
+			name = Debug;
+		};
+		6E22709D1A634A1E0093BB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IntervalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Interval.app/Interval";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E2270741A634A1D0093BB48 /* Build configuration list for PBXProject "Interval" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E2270961A634A1E0093BB48 /* Debug */,
+				6E2270971A634A1E0093BB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E2270981A634A1E0093BB48 /* Build configuration list for PBXNativeTarget "Interval" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E2270991A634A1E0093BB48 /* Debug */,
+				6E22709A1A634A1E0093BB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E22709B1A634A1E0093BB48 /* Build configuration list for PBXNativeTarget "IntervalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E22709C1A634A1E0093BB48 /* Debug */,
+				6E22709D1A634A1E0093BB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E2270711A634A1D0093BB48 /* Project object */;
+}
